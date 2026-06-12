@@ -47,12 +47,13 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-5 mt-8">
-            <button
-              className="bg-[#ffc21f] text-[#3b2d00] px-10 py-4 text-[1.15rem] font-black shadow-[0_16px_40px_rgba(255,194,31,0.18)] transition-transform duration-300 hover:-translate-y-0.5"
+            <a
+              className="bg-[#ffc21f] text-[#3b2d00] px-10 py-4 text-[1.15rem] font-black shadow-[0_16px_40px_rgba(255,194,31,0.18)] transition-transform duration-300 hover:-translate-y-0.5 inline-flex items-center gap-3"
+              href="/auction"
               style={{ fontFamily: 'Arial Black, Arial, sans-serif', clipPath: 'polygon(0 0, 92% 0, 100% 18%, 100% 100%, 0 100%)' }}
             >
               Enter Live Draft
-            </button>
+            </a>
             <a className="group flex items-center gap-4 text-[#8ed9ea] text-[1.1rem] font-bold hover:text-white transition-colors" href="/legacy" style={{ fontFamily: 'Arial, sans-serif' }}>
               Discover the Legacy
               <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform text-[1.2rem]">arrow_forward</span>
