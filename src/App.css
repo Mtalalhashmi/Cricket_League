@@ -1,0 +1,130 @@
+@keyframes pulse-blue {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+	}
+}
+
+.pulse-blue {
+	animation: pulse-blue 2s infinite;
+}
+
+@keyframes blink-live-draft {
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.35;
+	}
+}
+
+.blink-live-draft {
+	animation: blink-live-draft 1.2s infinite;
+}
+
+.timeline-line {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: linear-gradient(to bottom, transparent, #333 15%, #333 85%, transparent);
+	transform: translateX(-50%);
+}
+
+.grayscale-image {
+	filter: grayscale(100%);
+	transition: filter 0.3s ease;
+}
+
+.grayscale-image:hover {
+	filter: grayscale(0%);
+}
+
+.section-padding {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.text-outline {
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.profile-title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	line-height: 1.1;
+}
+
+.obsidian-grid {
+	background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+	background-size: 24px 24px;
+}
+
+.gold-accent {
+	color: #ffd700;
+}
+
+.card-gradient {
+	background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 0%, rgba(10, 10, 10, 1) 100%);
+	border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.badge-blur {
+	backdrop-filter: blur(4px);
+}
+
+.glow-royals {
+	box-shadow: 0 0 40px -10px rgba(255, 45, 45, 0.15);
+	border: 1px solid rgba(255, 45, 45, 0.1);
+}
+
+.glow-eagles {
+	box-shadow: 0 0 40px -10px rgba(255, 0, 0, 0.15);
+	border: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+.glow-warriors {
+	box-shadow: 0 0 40px -10px rgba(34, 197, 94, 0.15);
+	border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+.icon-glow-royals {
+	filter: drop-shadow(0 0 12px rgba(251, 191, 36, 0.6));
+}
+
+.icon-glow-eagles {
+	filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.6));
+}
+
+.icon-glow-warriors {
+	filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.6));
+}
+
+.card-glow-red {
+	border: 1px solid rgba(220, 38, 38, 0.2);
+	background: linear-gradient(135deg, #0a0505 0%, #150505 100%);
+}
+
+.card-glow-green {
+	border: 1px solid rgba(22, 163, 74, 0.2);
+	background: linear-gradient(135deg, #050a05 0%, #051505 100%);
+}
+
+.card-glow-maroon {
+	border: 1px solid rgba(127, 29, 29, 0.2);
+	background: linear-gradient(135deg, #0a0505 0%, #1a0a0a 100%);
+}
